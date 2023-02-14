@@ -15,6 +15,7 @@
    <button onclick="makeYellow()">Make yellow</button>
    <button onclick="makeRed()">Make Red</button>
    <button id="make-blue">Make Blue</button>
+   <button id="make-pink">Make Pink</button>
 </body>
 
 
@@ -26,12 +27,26 @@
    function makeRed() {
       document.body.style.backgroundColor = "red";
    }
+
    const makeBlueButton = document.getElementById('make-blue');
-   makeBlueButton.onclick = makeBlue();
+   makeBlueButton.onclick = makeBlue;
 
    function makeBlue() {
-      document.style.body.backgroundColor = 'blue';
+      document.body.style.backgroundColor = 'blue';
    }
+
+
+
+   // onclick function option 4
+
+   const pinkButton = document.getElementById('make-pink');
+   pinkButton.addEventListener('click', makePink);
+
+   function makePink() {
+      document.body.style.backgroundColor = 'pink';
+   }
+
+
 </script>
 
 </html>
